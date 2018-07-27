@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		22C26195210A146300480866 /* DJColorWheel.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C26193210A146300480866 /* DJColorWheel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22C261A0210A14BA00480866 /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2619B210A14BA00480866 /* BrightnessView.swift */; };
+		22C261A1210A14BA00480866 /* SelectedColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2619C210A14BA00480866 /* SelectedColorView.swift */; };
+		22C261A2210A14BA00480866 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2619D210A14BA00480866 /* ColorUtils.swift */; };
+		22C261A3210A14BA00480866 /* ColorWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2619E210A14BA00480866 /* ColorWheel.swift */; };
+		22C261A4210A14BA00480866 /* DJColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2619F210A14BA00480866 /* DJColorPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		22C26190210A146300480866 /* DJColorWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJColorWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C26193210A146300480866 /* DJColorWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJColorWheel.h; sourceTree = "<group>"; };
 		22C26194210A146300480866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C2619B210A14BA00480866 /* BrightnessView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
+		22C2619C210A14BA00480866 /* SelectedColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedColorView.swift; sourceTree = "<group>"; };
+		22C2619D210A14BA00480866 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		22C2619E210A14BA00480866 /* ColorWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorWheel.swift; sourceTree = "<group>"; };
+		22C2619F210A14BA00480866 /* DJColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DJColorPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,11 @@
 			isa = PBXGroup;
 			children = (
 				22C26193210A146300480866 /* DJColorWheel.h */,
+				22C2619B210A14BA00480866 /* BrightnessView.swift */,
+				22C2619D210A14BA00480866 /* ColorUtils.swift */,
+				22C2619E210A14BA00480866 /* ColorWheel.swift */,
+				22C2619C210A14BA00480866 /* SelectedColorView.swift */,
+				22C2619F210A14BA00480866 /* DJColorPicker.swift */,
 				22C26194210A146300480866 /* Info.plist */,
 			);
 			path = DJColorWheel;
@@ -95,6 +110,7 @@
 				TargetAttributes = {
 					22C2618F210A146300480866 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -130,6 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22C261A2210A14BA00480866 /* ColorUtils.swift in Sources */,
+				22C261A0210A14BA00480866 /* BrightnessView.swift in Sources */,
+				22C261A1210A14BA00480866 /* SelectedColorView.swift in Sources */,
+				22C261A4210A14BA00480866 /* DJColorPicker.swift in Sources */,
+				22C261A3210A14BA00480866 /* ColorWheel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +282,7 @@
 		22C26199210A146300480866 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +292,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJColorWheel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +301,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeanoelyse.DJColorWheel;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +310,7 @@
 		22C2619A210A146300480866 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +320,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = DJColorWheel/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
