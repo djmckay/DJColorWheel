@@ -15,7 +15,25 @@
 		22C261A4210A14BA00480866 /* DJColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2619F210A14BA00480866 /* DJColorPicker.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		227ACF9E22481F5D00BBA992 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227ACF9922481F5C00BBA992 /* Panels.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D97C1BEFF229002C0205;
+			remoteInfo = "Panels-iOS";
+		};
+		227ACFA022481F5D00BBA992 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 227ACF9922481F5C00BBA992 /* Panels.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 52D6D9861BEFF229002C0205;
+			remoteInfo = "Panels-iOS Tests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		227ACF9922481F5C00BBA992 /* Panels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Panels.xcodeproj; path = ../Panels/Panels.xcodeproj; sourceTree = "<group>"; };
 		22C26190210A146300480866 /* DJColorWheel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DJColorWheel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C26193210A146300480866 /* DJColorWheel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJColorWheel.h; sourceTree = "<group>"; };
 		22C26194210A146300480866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,9 +55,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		227ACF9A22481F5C00BBA992 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				227ACF9F22481F5D00BBA992 /* Panels.framework */,
+				227ACFA122481F5D00BBA992 /* Panels-iOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		22C26186210A146300480866 = {
 			isa = PBXGroup;
 			children = (
+				227ACF9922481F5C00BBA992 /* Panels.xcodeproj */,
 				22C26192210A146300480866 /* DJColorWheel */,
 				22C26191210A146300480866 /* Products */,
 			);
@@ -124,12 +152,35 @@
 			mainGroup = 22C26186210A146300480866;
 			productRefGroup = 22C26191210A146300480866 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 227ACF9A22481F5C00BBA992 /* Products */;
+					ProjectRef = 227ACF9922481F5C00BBA992 /* Panels.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				22C2618F210A146300480866 /* DJColorWheel */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		227ACF9F22481F5D00BBA992 /* Panels.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Panels.framework;
+			remoteRef = 227ACF9E22481F5D00BBA992 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		227ACFA122481F5D00BBA992 /* Panels-iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Panels-iOS Tests.xctest";
+			remoteRef = 227ACFA022481F5D00BBA992 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		22C2618E210A146300480866 /* Resources */ = {
