@@ -44,6 +44,10 @@ open class DJColorPicker: UIView, ColorWheelDelegate, BrightnessViewDelegate {
         setup()
     }
     
+    open func togglePreview() {
+        self.selectedColorView.isHidden = !self.selectedColorView.isHidden
+    }
+    
     func setup() {
         // Remove all subviews
         let views = self.subviews
